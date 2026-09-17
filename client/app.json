@@ -19,13 +19,13 @@
         "monochromeImage": "./assets/images/android-icon-monochrome.png"
       },
       "edgeToEdgeEnabled": true,
-      "predictiveBackGestureEnabled": false
+      "predictiveBackGestureEnabled": false,
+      "package": "com.ghulamhassan120.ecommerce_app_with_react_native"
     },
     "web": {
       "output": "static",
       "favicon": "./assets/favicon.png",
-            "bundler": "metro"
-
+      "bundler": "metro"
     },
     "plugins": [
       "expo-router",
@@ -40,11 +40,19 @@
             "backgroundColor": "#000000"
           }
         }
-      ]
+      ],
+      "expo-secure-store",
+      "@clerk/expo"
     ],
     "experiments": {
       "typedRoutes": true,
       "reactCompiler": true
+    },
+    "extra": {
+      "router": {},
+      "eas": {
+        "projectId": "56ae25a6-25ab-44d7-98fc-3bc06028b6ab"
+      }
     }
   }
 }
